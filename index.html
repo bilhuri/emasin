@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMASIN | Gold Investment by MeuhPirak</title>
+    <meta name="description" content="Divisi Emas resmi dari MeuhPirak Ecosystem. Segera Hadir.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Manrope', 'sans-serif'],
+                    },
+                    colors: {
+                        onyx: '#0F0F0F',
+                        charcoal: '#1A1A1A',
+                        gold: {
+                            100: '#FBF5B7',
+                            200: '#F0E68C',
+                            300: '#D4AF37', /* True Gold */
+                            400: '#C5A028',
+                            500: '#AA771C',
+                            900: '#5C4033',
+                        }
+                    },
+                    backgroundImage: {
+                        'gold-gradient': 'linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%)',
+                        'gold-text': 'linear-gradient(to bottom, #FCF6BA, #BF953F, #AA771C)',
+                        'subtle-noise': "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noise)%22 opacity=%220.03%22/%3E%3C/svg%3E')",
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'shine': 'shine 3s infinite',
+                        'fade-in-up': 'fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        shine: {
+                            '0%': { transform: 'translateX(-100%)' },
+                            '100%': { transform: 'translateX(100%)' }
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: 0, transform: 'translateY(40px)' },
+                            '100%': { opacity: 1, transform: 'translateY(0)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .text-gold-metallic {
+            background: linear-gradient(to bottom, #FCF6BA 0%, #BF953F 40%, #AA771C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        .btn-gold {
+            background: linear-gradient(90deg, #BF953F, #FCF6BA, #B38728, #AA771C);
+            background-size: 300% 100%;
+            transition: all 0.4s ease-in-out;
+        }
+        .btn-gold:hover {
+            background-position: 100% 0;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .glow-spot {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, rgba(0,0,0,0) 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="bg-onyx text-gray-200 font-sans min-h-screen flex flex-col relative overflow-hidden bg-subtle-noise">
+
+    <div class="glow-spot animate-pulse" style="animation-duration: 4s;"></div>
+    
+    <div class="absolute top-0 w-full h-1 bg-gradient-to-r from-transparent via-gold-300 to-transparent opacity-50"></div>
+
+    <main class="flex-grow flex flex-col items-center justify-center px-4 sm:px-6 relative z-10">
+        
+        <div class="text-center mb-8 opacity-0 animate-fade-in-up" style="animation-delay: 100ms;">
+            <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-gold-300/20 bg-gold-900/10 backdrop-blur-sm">
+                <span class="w-1.5 h-1.5 rounded-full bg-gold-300 animate-pulse"></span>
+                <span class="text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-gold-200/80">
+                    Official Gold Division of <span class="text-white">MeuhPirak</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="text-center max-w-3xl mx-auto space-y-6 md:space-y-8">
+            
+            <div class="relative opacity-0 animate-fade-in-up" style="animation-delay: 200ms;">
+                <h1 class="font-serif text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight text-gold-metallic drop-shadow-2xl">
+                    EMASIN
+                </h1>
+                <p class="absolute -bottom-2 md:-bottom-4 left-0 right-0 text-[10px] md:text-sm tracking-[0.5em] text-gold-300/60 uppercase font-light">
+                    The Gold Standard
+                </p>
+            </div>
+
+            <div class="space-y-4 opacity-0 animate-fade-in-up" style="animation-delay: 400ms;">
+                <h2 class="text-xl md:text-2xl font-light text-white font-serif italic">
+                    Sistem Investasi Emas Fisik Terintegrasi
+                </h2>
+                <p class="text-sm md:text-base text-gray-400 leading-relaxed max-w-xl mx-auto font-light">
+                    Layanan eksklusif jual beli Emas Murni (Gold Bar & Dinar) di bawah naungan ekosistem 
+                    <strong class="text-gray-200">MeuhPirak Group</strong>. 
+                    <br class="hidden md:block">
+                    Kami sedang mempersiapkan infrastruktur untuk memberikan harga paling kompetitif dan jaminan buyback transparan di Aceh & Indonesia.
+                </p>
+            </div>
+
+            <div class="pt-6 flex flex-col items-center gap-6 opacity-0 animate-fade-in-up" style="animation-delay: 600ms;">
+                
+                <div class="glass-card px-6 py-2 rounded-full flex items-center gap-2">
+                    <i data-lucide="clock" class="w-4 h-4 text-gold-300"></i>
+                    <span class="text-xs md:text-sm font-bold tracking-wider text-gold-100 uppercase">Segera Hadir • 2026</span>
+                </div>
+
+                <a href="https://wa.me/6289512241234?text=Halo%20Admin%20MeuhPirak,%20saya%20tertarik%20info%20launching%20EMASIN." 
+                   target="_blank"
+                   class="group relative overflow-hidden rounded-lg btn-gold px-8 py-4 md:px-10 md:py-5 transform hover:-translate-y-1 transition duration-300">
+                    <div class="relative z-10 flex items-center gap-3">
+                        <span class="font-serif font-bold text-onyx tracking-wide text-sm md:text-base">Dapatkan Info via WhatsApp</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 text-onyx group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                    <div class="absolute top-0 left-0 w-full h-full bg-white/30 transform -skew-x-12 -translate-x-full group-hover:animate-shine"></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="mt-16 md:mt-24 grid grid-cols-3 gap-8 md:gap-16 opacity-0 animate-fade-in-up" style="animation-delay: 800ms;">
+            <div class="text-center group">
+                <div class="w-10 h-10 md:w-12 md:h-12 mx-auto rounded-full bg-gold-900/20 border border-gold-500/30 flex items-center justify-center mb-3 group-hover:border-gold-300 transition">
+                    <i data-lucide="shield-check" class="w-5 h-5 text-gold-300"></i>
+                </div>
+                <p class="text-[10px] md:text-xs text-gray-400 uppercase tracking-widest">Amanah</p>
+            </div>
+            <div class="text-center group">
+                <div class="w-10 h-10 md:w-12 md:h-12 mx-auto rounded-full bg-gold-900/20 border border-gold-500/30 flex items-center justify-center mb-3 group-hover:border-gold-300 transition">
+                    <i data-lucide="gem" class="w-5 h-5 text-gold-300"></i>
+                </div>
+                <p class="text-[10px] md:text-xs text-gray-400 uppercase tracking-widest">Murni</p>
+            </div>
+            <div class="text-center group">
+                <div class="w-10 h-10 md:w-12 md:h-12 mx-auto rounded-full bg-gold-900/20 border border-gold-500/30 flex items-center justify-center mb-3 group-hover:border-gold-300 transition">
+                    <i data-lucide="repeat" class="w-5 h-5 text-gold-300"></i>
+                </div>
+                <p class="text-[10px] md:text-xs text-gray-400 uppercase tracking-widest">Buyback</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="relative z-10 py-8 text-center opacity-0 animate-fade-in-up" style="animation-delay: 1000ms;">
+        <div class="w-24 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent mx-auto mb-6"></div>
+        <p class="text-[10px] text-gray-500 tracking-wider">
+            &copy; 2026 EMASIN. Managed by <strong class="text-gold-400">MeuhPirak Group</strong> (Aceh).
+        </p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
